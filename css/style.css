@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/********* Styling Acceuil Page ************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand{
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.nav-link , .readMoreLinks{
+    color: black !important;
+}
+.firstSectionImg{
+    width: 90%;
+    height: 600px;
+    background-image: url("../img/bg@2x.png");
+    background-size: cover;    
+}
+#firstSectionContent{
+    margin-right: 10rem;
+    padding-top: 10rem;
+}
+#firstSectionContent > h1 {
+    font-weight: lighter;
+    letter-spacing: 6px;
+}
+#firstSectionContent > p {
+    margin-bottom: 2.6rem;
+    color: #7C7A7A;
+    width: 340px;
+}
+.AcceuilIconsC{
+    margin-top: 7rem;
+}
+#loadMoreButt{
+    border: none;
+    color: white;
+    background-color: #FF5235;
+    padding: 1.1rem;
+    width: 260px;
+    font-weight: bold;
+}
+.section4C{
+    margin-top: 10rem;
+}
+.section4Parag {
+    width: 270px;
+}
+.readMoreLinks{
+    font-weight: bold;
+}
+#soldedOrNew{
+    position: absolute;
+    top: 3%;
+    width: 94%;
+}
+#soldedOrNew span {
+    padding: 0.3rem;
+    background-color: #FFDEDE;
+}
+@media only screen and (max-width: 767px){
+.section4Parag{
+    width: auto !important;
+}
+#soldedOrNew{
+    width: 89%;
+}
+}
+#acceuilFooter{
+    margin-top: 12rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #F6F6F6;
+}
+#footerSeparatorAcc{
+    margin-top: 3rem;
+    background: grey;
+    height: 1px;
+}
+.navRectangles{
+    cursor: pointer;
+    margin: 0.4rem;
+    border: 1px solid black;
+    width: 20px;
+    height: 30px;
+}
+#navRectangleActive{
+    border-color: blue;
+}
