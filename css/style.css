@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-/********* Styling Acceuil Page ************/
+:root{
+    --orange-color : #FF5235;
+}
+/*************** Start   Acceuil Page ***************/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+.active {
+    color: var(--orange-color) !important;
+}
+header img {
+    cursor: pointer;
 }
 .navbar-brand{
     letter-spacing: 5px;
@@ -35,10 +44,10 @@
 .AcceuilIconsC{
     margin-top: 7rem;
 }
-#loadMoreButt{
+#loadMoreButt , #filterButt{
     border: none;
     color: white;
-    background-color: #FF5235;
+    background-color: var(--orange-color);
     padding: 1.1rem;
     width: 260px;
     font-weight: bold;
@@ -55,7 +64,8 @@
 #soldedOrNew{
     position: absolute;
     top: 3%;
-    width: 94%;
+    left: 12%;
+    width: 100%;
 }
 #soldedOrNew span {
     padding: 0.3rem;
@@ -90,3 +100,115 @@
 #navRectangleActive{
     border-color: blue;
 }
+/************************* End Acceuil Page *************************/
+
+/************************ Start Produits Page ***********************/
+.navRectanglesProduits{
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    height: 45px;
+    cursor: pointer;
+    margin: 0.4rem;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    color: black;
+}
+#navRectProduActive{
+    color: white;
+    background-color: var(--orange-color);
+}
+.h3ContainProd{
+    width: 100%;
+    background-color: #F5F5F5;
+}
+.wrapper{
+    position: relative;
+    width: 300px;
+    padding: 0.5rem;
+}
+.rangeCont{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: 1rem;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+.slider-track{
+    width: 100%;
+    height: 5px;
+    background-color: var(--orange-color);
+    position: absolute;
+    top: 43%;
+    bottom: 0;
+    border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: auto;
+    margin-top: -10px;
+}
+
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: white;
+    border: 3px solid var(--orange-color);
+}
+.values{
+    background-color: var(--orange-color);
+    width: 32%;
+    position: relative;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+}
+.values::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 15px solid var(--orange-color);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    margin: auto;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+}
+select {
+    width: 100%;
+    background-color: #F6F6F6;
+    color: grey;
+    padding: 0.5rem;
+}
+#filterButt{
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 150px;
+}
+/************************ End Produits Page ***********************/
