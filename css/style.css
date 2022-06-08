@@ -260,3 +260,15 @@ select {
     width: 40%;
 }
 /************************ End Product info Page ***********************/
+
+/************************ Start à Propos  Page ***********************/
+
+#aboutUsSmallImg{
+position: absolute;
+right: -15%;
+top: 65%;
+}
+#whoWeAreC{
+    width: 500px;
+}
+/************************ End à Propos  Page ***********************/
