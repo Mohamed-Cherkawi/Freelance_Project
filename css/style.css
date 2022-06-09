@@ -82,6 +82,10 @@ header img {
 #soldedOrNew{
     width: 89%;
 }
+/* Contact css on this screen size */
+.contactInputs{
+    width: 80% !important;
+}
 }
 #acceuilFooter{
     margin-top: 12rem;
@@ -272,3 +276,31 @@ top: 65%;
     width: 500px;
 }
 /************************ End à Propos  Page ***********************/
+
+/************************ Start Contact Page ***********************/
+.iframeC{
+    overflow-y: hidden !important;
+}
+.contactInputs{
+padding-bottom: 0.3rem;
+background-color: transparent;
+border: none;
+font-size: 15px;
+outline: 0;
+}
+.contactInputs:focus  {
+ border-bottom: 1px solid var(--orange-color);
+}
+.contactInputs:focus::placeholder {
+    color: var(--orange-color);
+}
+#contactTextera{
+    padding: 1rem;
+    border: none;
+    height: 250px;
+}
+#contactTextera:focus {
+    outline-color: var(--orange-color);
+    
+}
+/************************ End Contact Page ***********************/
