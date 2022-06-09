@@ -44,7 +44,7 @@ header img {
 .AcceuilIconsC{
     margin-top: 7rem;
 }
-#loadMoreButt , #filterButt{
+#loadMoreButt , #filterButt , #contShoopingButt , #ProceedButt{
     border: none;
     color: white;
     background-color: var(--orange-color);
@@ -304,3 +304,27 @@ outline: 0;
     
 }
 /************************ End Contact Page ***********************/
+
+/************************ Start Panier Page ***********************/
+.PanierContentC{
+    overflow-y: hidden;
+    width: 1260px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+@media only screen and (min-width: 1400px){
+    #panierFsection{
+        overflow-x: hidden !important;
+    }
+}
+#contShoopingButt{
+    width: 300px;
+    padding: 1rem;
+}
+@media only screen and (max-width: 575px){
+    .secondSectPanier{
+        align-items: center !important;
+    }
+}
+
+/************************ End Panier Page ***********************/
