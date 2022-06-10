@@ -44,7 +44,7 @@ header img {
 .AcceuilIconsC{
     margin-top: 7rem;
 }
-#loadMoreButt , #filterButt , #contShoopingButt , #ProceedButt{
+#loadMoreButt , #filterButt , #contShoopingButt , #ProceedButt , #placeOrderButt{
     border: none;
     color: white;
     background-color: var(--orange-color);
@@ -328,3 +328,33 @@ outline: 0;
 }
 
 /************************ End Panier Page ***********************/
+
+/************************ Start Validation commande Page ***********************/
+
+.validCommLabels{
+    color: grey;
+}
+.validCommInputs{
+    border: none;
+    background-color: #F6F7FB;
+}
+.firstLastInputs{
+    width: 95%;
+}
+.validCommSeparator{
+    height: 1px;
+    background-color: #ece9e9;
+}
+#totalCommCont{
+    background-color: #FBFBFB;
+    width: 500px;
+}
+#placeOrderButt{
+    font-size: 15px;
+    padding: 0.5rem;
+}
+#emailinputVC{
+    padding: 0.7rem;
+    border: none;
+}
+/************************ End Validation commande Page ***********************/

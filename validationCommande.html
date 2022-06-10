@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Validation Commande</title>
+</head>
+<body>
+    <main class="container mt-5">
+        <h4 class="text-center">Validation de la commande</h4>
+        <div class="d-flex flex-column flex-md-row justify-content-around mt-5">
+        <div>
+            <h5 class="mb-3 fw-bold">Adresse de livraison</h5>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <label class="d-block validCommLabels" for="">FIRST NAME</label>
+                    <input class="validCommInputs firstLastInputs" type="text">
+                </div>
+                <div>
+                    <label class="d-block validCommLabels" for="">LAST NAME</label>
+                    <input class="validCommInputs firstLastInputs w-100" type="text">
+                </div>
+            </div>    
+            <div class="mt-3">
+                <label class="d-block validCommLabels" for="">COMPANY NAME</label>
+                <input class="validCommInputs w-100" type="text">
+            </div>
+            <div class="mt-3">
+                <label class="d-block validCommLabels" for="">ADDRESS</label>
+                <input class="validCommInputs w-100" type="text">
+            </div>
+            <div class="mt-3">
+                <label class="d-block validCommLabels" for="">CITY/TOWN</label>
+                <input class="validCommInputs w-100" type="text">
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+                <div>
+                    <label class="d-block validCommLabels" for="">COUNTRY / STATES</label>
+                    <input class="validCommInputs firstLastInputs" type="text">
+                </div>
+                <div>
+                    <label class="d-block validCommLabels" for="">POSTCODE / ZIP</label>
+                    <input class="validCommInputs firstLastInputs" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column p-4 mt-5 mt-md-0" id="totalCommCont">
+            <h5 class="text-end fw-bold">Votre Commande</h5>
+            <div class="validCommSeparator"></div>
+            <span class="my-2">Products</span>
+            <div class="d-flex justify-content-between my-2"><span>Cum sociis natoque x3</span><span>$14.00</span></div>
+            <div class="d-flex justify-content-between my-2"><span>Habitant morbi tristique</span><span>$28.00</span></div>
+            <div class="d-flex justify-content-between my-2"><span>Aenean ultricies</span><span>$24.00</span></div>
+            <div class="validCommSeparator"></div>
+            <div class="d-flex justify-content-between my-2"><span class="fw-bold">Subtotal</span><span>$68.00</span></div>
+            <div class="validCommSeparator"></div>
+            <div class="d-flex justify-content-between my-2"><span class="fw-bold">Shipping</span><span>$0</span></div>
+            <div class="validCommSeparator"></div>
+            <div class="d-flex justify-content-between my-2 pt-4"><span class="fw-bold">Total</span><span class="active fw-bold">$68.00</span></div>
+            <button class="w-100 fw-bolder my-4" id="placeOrderButt">PLACE ORDER</button>
+        </div>
+        </div>
+    </main>
+    <footer id="acceuilFooter">
+        <div
+          class="container d-flex flex-column flex-lg-row align-items-center justify-content-between"
+        >
+          <div>
+            <h2>Texo</h2>
+            <span class="d-block mb-2 text-secondary">
+              Email : <span class="active">@gmail.com</span>
+            </span>
+            <span class="text-secondary"> Phone: 06 34 76 33 77 </span>
+            <p class="my-3">Subscribe to our newsleter and stay <br> up to date with latest offers and <br> upcoming trends.</p>
+            <input id="emailinputVC" class="w-100" type="email" placeholder="Email">
+          </div>
+          <div class="mt-4 mt-lg-0">
+            <h5>About Us</h5>
+            <ul
+              class="d-flex flex-column justify-content-between list-unstyled mt-4 mt-md-0"
+            >
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Our Outlets</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Sales and Retails</a></li>
+              <li class="my-2"><a class="active" href="#">Areas we serve</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Career at Texo</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Help and Support</h5>
+            <ul
+              class="d-flex flex-column justify-content-between list-unstyled mt-4 mt-md-0"
+            >
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Track my order</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Our top products</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">My cart</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Sign in</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Shipping Calculator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Pages & Resources</h5>
+            <ul
+              class="d-flex flex-column justify-content-between list-unstyled mt-4 mt-md-0"
+            >
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">ABout Us</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Shop Page</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Category Page</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">Sign in page</a></li>
+              <li class="my-2"><a class="text-decoration-none text-dark" href="#">404 page</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="footerSeparatorAcc"></div>
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center mt-4"
+        >
+          <span class="text-secondary"
+            >Copyright © 2020 | Created by Moundir Jabir</span
+          >
+          <div class="d-flex mt-2 mb-2 mt-md-0 mb-md-0">
+            <div class="navRectangles"></div>
+            <div class="navRectangles" id="navRectangleActive"></div>
+            <div class="navRectangles"></div>
+            <div class="navRectangles"></div>
+          </div>
+          <span class="text-secondary"
+            >Terms of Use &nbsp; &nbsp;|&nbsp; &nbsp; Privacy Policy</span
+          >
+        </div>
+      </footer>
+</body>
+</html>
